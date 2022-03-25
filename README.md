@@ -1,3 +1,5 @@
+<img width="1440" alt="Thumbnail" src="https://user-images.githubusercontent.com/43838718/160140118-c355b62a-07bb-4725-b0ca-9f2094900145.png">
+
 # Athena
 
 Portfolio optimization is the process of selecting the best portfolio (asset distribution), out of the set of all portfolios being considered, according to some objective. The objective typically maximizes factors such as expected return, and minimizes costs like financial risk.
