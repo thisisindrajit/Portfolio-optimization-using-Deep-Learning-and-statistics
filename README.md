@@ -118,8 +118,7 @@ The asset fundamentals analyser is mainly used to analyse various metrics that c
 - Debt to asset ratio
 - Is assets 1.5 times greater than liabilities
 
-##
-# Final output generator
+### Final output generator
 
 The final output generator performs calculations based on the inputs provided and then returns the final optimized weights. In the final optimization step, fundamentally stronger stocks are given more importance during weight allocation, while the risk is kept as diversified as possible to make sure the optimized portfolio is robust, provides good returns with less risk and suits well for long-term investment.
 
