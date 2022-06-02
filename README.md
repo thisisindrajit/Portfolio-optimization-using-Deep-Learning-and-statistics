@@ -122,6 +122,427 @@ The asset fundamentals analyser is mainly used to analyse various metrics that c
 
 The final output generator performs calculations based on the inputs provided and then returns the final optimized weights. In the final optimization step, fundamentally stronger stocks are given more importance during weight allocation, while the risk is kept as diversified as possible to make sure the optimized portfolio is robust, provides good returns with less risk and suits well for long-term investment.
 
+## Results
+
+The proposed model was tested on a portfolio consisting of Indian stocks and the inferences are presented below.
+ 
+The portfolio consists of 10 Indian stocks listed in the National Stock Exchange of India (NSE). All stocks were selected based on analyst recommendations from various investment companies. The stocks in the portfolio along with their ticker symbols is shown below:
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td><strong>Ticker symbols (NSE)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aarti Drugs</strong>
+   </td>
+   <td>AARTIDRUGS
+   </td>
+  </tr>
+  <tr>
+   <td><strong>APL Apollo Tubes</strong>
+   </td>
+   <td>APLAPOLLO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Birlasoft</strong>
+   </td>
+   <td>BSOFT
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Coforge</strong>
+   </td>
+   <td>COFORGE
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dhampur Sugar Mills</strong>
+   </td>
+   <td>DHAMPURSUG
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ICICI Securities</strong>
+   </td>
+   <td>ISEC
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lincoln pharma</strong>
+   </td>
+   <td>LINCOLN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>State bank of India</strong>
+   </td>
+   <td>SBIN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tata Power</strong>
+   </td>
+   <td>TATAPOWER
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Thirumalai Chemicals Ltd</strong>
+   </td>
+   <td>TIRUMALCHM
+   </td>
+  </tr>
+</table>
+
+#### Weights allocated by different models (As obtained on 18th May 2022)
+
+This table shows the weights allocated to each stock in the portfolio by different models. As per the proposed model, all of these weights are sent to the final output generator where based on the fundamentals analysis scores, the best weights are chosen for each stock and the final weights are obtained.
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td><strong>DL model</strong>
+   </td>
+   <td><strong>HRP</strong>
+   </td>
+   <td><strong>HERC</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aarti Drugs</strong>
+   </td>
+   <td>0.090153
+   </td>
+   <td>0.128619
+   </td>
+   <td>0.019307
+   </td>
+  </tr>
+  <tr>
+   <td><strong>APL Apollo Tubes</strong>
+   </td>
+   <td>0.35
+   </td>
+   <td>0.062015
+   </td>
+   <td>0.011910
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Birlasoft</strong>
+   </td>
+   <td>0.062669
+   </td>
+   <td>0.066786
+   </td>
+   <td>0.036506
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Coforge</strong>
+   </td>
+   <td>0.154747
+   </td>
+   <td>0.266242
+   </td>
+   <td>0.113753
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dhampur Sugar Mills</strong>
+   </td>
+   <td>0.090688
+   </td>
+   <td>0.083187
+   </td>
+   <td>0.165851
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ICICI Securities</strong>
+   </td>
+   <td>0.017432
+   </td>
+   <td>0.049992
+   </td>
+   <td>0.009601
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lincoln pharma</strong>
+   </td>
+   <td>0.032083
+   </td>
+   <td>0.086568
+   </td>
+   <td>0.172592
+   </td>
+  </tr>
+  <tr>
+   <td><strong>State bank of India</strong>
+   </td>
+   <td>0.027805
+   </td>
+   <td>0.109243
+   </td>
+   <td>0.209761
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tata Power</strong>
+   </td>
+   <td>0.149399
+   </td>
+   <td>0.097192
+   </td>
+   <td>0.186621
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Thirumalai Chemicals Ltd</strong>
+   </td>
+   <td>0.025025
+   </td>
+   <td>0.050155
+   </td>
+   <td>0.074098
+   </td>
+  </tr>
+</table>
+
+#### Comparison of annual expected returns, annual volatility and Sharpe ratio (As obtained on 18th May 2022)
+
+This table shows the annual expected returns, annual volatility and Sharpe ratio that the investors can expect if they optimize this portfolio with the weights allocated by the respective models (as shown in the previous table).
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td><strong>DL model</strong>
+   </td>
+   <td><strong>HRP</strong>
+   </td>
+   <td><strong>HERC</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Annual expected returns (in %)</strong>
+   </td>
+   <td>40.16
+   </td>
+   <td>35.63
+   </td>
+   <td>30.88
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Annual volatility (in %)</strong>
+   </td>
+   <td>28.55
+   </td>
+   <td>27.52
+   </td>
+   <td>29.74
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Sharpe ratio</strong>
+   </td>
+   <td>1.41
+   </td>
+   <td>1.29
+   </td>
+   <td>1.04
+   </td>
+  </tr>
+</table>
+
+From this table, it is evident that the DL model weight allocations correspond to the highest Sharpe ratio. This is because the DL model only tries to maximize the Sharpe ratio and not provide optimal allocation to all assets, whereas the other two statistical models diversify the risk among all assets while trying to keep the Sharpe ratio as optimal as possible.
+
+
+#### Score from fundamentals analyser (As obtained on 18th May 2022)
+
+This table shows the fundamentals analysis score for each stock in the portfolio. The scores are allocated based on various metrics that provide insights on how fundamentally strong the stock is.
+
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td><strong>Fundamentals analysis score</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aarti Drugs</strong>
+   </td>
+   <td>9.24
+   </td>
+  </tr>
+  <tr>
+   <td><strong>APL Apollo Tubes</strong>
+   </td>
+   <td>6.94
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Birlasoft</strong>
+   </td>
+   <td>6.51
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Coforge</strong>
+   </td>
+   <td>5.84
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dhampur Sugar Mills</strong>
+   </td>
+   <td>7.01
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ICICI Securities</strong>
+   </td>
+   <td>7.78
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lincoln pharma</strong>
+   </td>
+   <td>7.77
+   </td>
+  </tr>
+  <tr>
+   <td><strong>State bank of India</strong>
+   </td>
+   <td>6.16
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tata Power</strong>
+   </td>
+   <td>4
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Thirumalai Chemicals Ltd</strong>
+   </td>
+   <td>6.5
+   </td>
+  </tr>
+</table>
+
+\* Assets with higher scores are considered to be fundamentally stronger compared to the ones with lower scores.
+
+
+#### Final output (As obtained on 18th May 2022)
+
+This table shows the final weights that are obtained after the final output generator performs calculations for optimizing the portfolio even further based on the fundamentals analysis scores.
+
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td><strong>Final weights</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aarti Drugs</strong>
+   </td>
+   <td>0.136134
+   </td>
+  </tr>
+  <tr>
+   <td><strong>APL Apollo Tubes</strong>
+   </td>
+   <td>0.148824
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Birlasoft</strong>
+   </td>
+   <td>0.062836
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Coforge</strong>
+   </td>
+   <td>0.121268
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dhampur Sugar Mills</strong>
+   </td>
+   <td>0.120757
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ICICI Securities</strong>
+   </td>
+   <td>0.057508
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lincoln pharma</strong>
+   </td>
+   <td>0.180107
+   </td>
+  </tr>
+  <tr>
+   <td><strong>State bank of India</strong>
+   </td>
+   <td>0.035320
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tata Power</strong>
+   </td>
+   <td>0.104707
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Thirumalai Chemicals Ltd</strong>
+   </td>
+   <td>0.032540
+   </td>
+  </tr>
+</table>
+
+
+This table shows the annual expected returns, annual volatility and Sharpe ratio that the investors can expect if they optimize this portfolio with the weights shown in the above table.
+
+
+<table>
+  <tr>
+   <td><strong>Annual expected returns (in %)</strong>
+   </td>
+   <td>34.19
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Annual volatility (in %)</strong>
+   </td>
+   <td>27.52
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Sharpe ratio</strong>
+   </td>
+   <td>1.24
+   </td>
+  </tr>
+</table>
+
+
+From this table, we can see that the expected returns and Sharpe ratio corresponding to the final weight allocation is slightly lesser than the expected returns and Sharpe ratios corresponding to the weight allocations by individual models. But the individual models do not take into account the fundamentals of the stocks in the portfolio, thereby making them more vulnerable to losses. 
+
 
 ## Reference Links
 
