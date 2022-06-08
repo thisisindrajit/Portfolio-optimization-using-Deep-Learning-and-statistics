@@ -60,7 +60,7 @@ Also another API is used to get extra information about the stocks like balance 
 
 ## System Design
 
-![model architecture](https://user-images.githubusercontent.com/43838718/158066436-723127a8-fd99-41aa-bc90-98d6724a3388.png)
+![Model architecture](https://user-images.githubusercontent.com/43838718/172583953-185763bd-3fbe-4646-b422-e984c497f792.png)
 
 
 ### Deep Learning Model
@@ -523,19 +523,19 @@ This table shows the annual expected returns, annual volatility and Sharpe ratio
   <tr>
    <td><strong>Annual expected returns (in %)</strong>
    </td>
-   <td>34.19
+    <td><i>34.19</i>
    </td>
   </tr>
   <tr>
    <td><strong>Annual volatility (in %)</strong>
    </td>
-   <td>27.52
+    <td><i>27.52</i>
    </td>
   </tr>
   <tr>
    <td><strong>Sharpe ratio</strong>
    </td>
-   <td>1.24
+    <td><i>1.24</i>
    </td>
   </tr>
 </table>
