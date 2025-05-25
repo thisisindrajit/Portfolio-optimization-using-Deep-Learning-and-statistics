@@ -1,4 +1,4 @@
-# Portfolio optimization using Deep Learning and Statistics
+# Portfolio optimization using Deep Learning and Statistics (Athena)
 
 Portfolio optimization is the process of selecting the best portfolio (asset distribution), out of the set of all portfolios being considered, according to some objective. The objective typically maximizes factors such as expected return, and minimizes costs like financial risk.
 
